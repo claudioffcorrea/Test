@@ -41,7 +41,7 @@
      } else {
       msg = str.substring(0,i);
       if(isNN4 == true){
-       document.getElementById('layer1').innerHTML ='<i><font face="verdana" color="white" style="font-size:100%">'+msg+'</font>></i>';
+       document.getElementById('layer1').innerHTML ='<i><font face="verdana" color="white" style="font-size:100%">'+msg+'</font></i>';
        //document.getElementById('layer1').document.close();
       }
       if(isIE4 == true){
@@ -57,6 +57,7 @@
 </head>
 
 <body onload="typeLayer()" onunload="clearTimeout(tID)">
+
 <!--FACEBOOK -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -66,6 +67,13 @@
   js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.9";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'ERfvpt72iX';var d=document;var w=window;function l(){
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
+
 
     <a id="menu-logos" class="toggle">
         <div class="fb-like" data-href="https://www.facebook.com/ADMisionera" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
@@ -236,7 +244,7 @@
                         <div class="col-md-4">
                             <div class="portfolio-item">
                                 <a>
-                                    <img class="img-portfolio img-responsive" src="img/joven.png">
+                                    <img class="img-portfolio img-responsive" src="img/jovenes.png">
                                 </a>
                             </div>
                         </div>
@@ -251,6 +259,13 @@
                             <div class="portfolio-item">
                                 <a>
                                     <img class="img-portfolio img-responsive" src="img/ebr.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="portfolio-item">
+                                <a>
+                                    <img class="img-portfolio img-responsive" src="img/vigilia.png">
                                 </a>
                             </div>
                         </div>
@@ -291,7 +306,7 @@
     <footer>
         <div id="contact" class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
+                <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 text-center">
                     <h4><strong>Iglesia Evangélica Asamblea de Dios Misionera</strong>
                     </h4>
                     <p>Avenida República Argentina 3000 c/ Caaguazú
@@ -304,26 +319,31 @@
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="#" data-toggle="modal" data-target="#5" class="btn btn-light">
+                            <a href="https://www.instagram.com/admisioneraoficial/" target="_blank" class="btn btn-light">
                             <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x" style="color: #181aa3"></i>
-                                <i class="fa fa-facebook fa-stack-3x text-primary" style="color: white"></i>
+                                <!-- <i class="fa fa-circle fa-stack-1x"></i> -->
+                                <i class="fa fa-instagram"></i>
                             </span></a>
-                            <!-- <a href="https://www.facebook.com/ADMisionera/" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a> -->
+                            <a href="https://www.youtube.com/channel/UC5Zv4H4gfFrQ9mmjTAm6Ptw/live" target="_blank" class="btn btn-light">
+                            <span class="fa-stack fa-4x">
+                                <!-- <i class="fa fa-circle fa-stack-1x"></i> -->
+                                <i class="fa fa-youtube"></i>
+                            </span></a>
                         </li>
-                       <!--  <li>
-                            <a href="#" style="color: blue;" data-toggle="modal" data-target="#6" class="btn btn-light"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
-                        </li> -->
-<!--                         <li>
-                            <a href="https://www.youtube.com/channel/UC5Zv4H4gfFrQ9mmjTAm6Ptw/live" target="_blank"><i class="fa fa-youtube fa-fw fa-3x"></i></a>
-                        </li> -->
                     </ul>
-                    <hr class="small">
+                </div>
+                <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 text-center">
+                	<div class="fb-page" data-href="https://www.facebook.com/ADMisionera/" data-height="350" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+          			<blockquote cite="https://www.facebook.com/ADMisionera/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ADMisionera/">Iglesia Asamblea de Dios Misionera</a></blockquote>
+        			</div>
+        		</div>
+                <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 text-center">
+                    <br><br><hr class="small">
                     <p class="text-muted">Copyright &copy; Asamblea de Dios Misionera 2017</p>
                 </div>
             </div>
         </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+        <!-- <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a> -->
     </footer>
 
     <!-- jQuery -->
@@ -438,106 +458,71 @@
 
 <div class="modal fade" id="1" role="dialog" data-keyboard="false" data-backdrop="static">
     <div class="modal-dialog">
-    
       <!-- Modal content-->
-      <div class="modal-content" style="text-align: center; width: 100%">
-        <div class="modal-header">
+      <div class="modal-content">
+        <div class="modal-body" align="center">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <!-- <h4 class="modal-title">Modal Header</h4> -->
-        </div>
-        <div class="modal-body">
           <a href="#" data-toggle="modal" data-target="#1"><img class="img-responsive" style="width:100% height: 100%;" src="img/diasculto.png" alt=""></a>
         </div>
-        <div class="modal-footer">
-          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-        </div>
-      </div>
-      
+      </div>      
     </div>
   </div>
 
   <div class="modal fade" id="2" role="dialog" data-keyboard="false" data-backdrop="static">
-    <div class="modal-dialog">
-    
+    <div class="modal-dialog">   
       <!-- Modal content-->
       <div class="modal-content" style="text-align: center; width: 100%">
-        <div class="modal-header">
+        <div class="modal-body" align="center">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <!-- <h4 class="modal-title">Modal Header</h4> -->
-        </div>
-        <div class="modal-body">
           <a href="#" data-toggle="modal" data-target="#2"><img class="img-responsive" style="width:100% height: 100%;" src="img/diasreunion.png" alt=""></a>
         </div>
-        <div class="modal-footer">
-          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-        </div>
       </div>
-      
     </div>
   </div>
 
     <div class="modal fade" id="3" role="dialog" data-keyboard="false" data-backdrop="static">
     <div class="modal-dialog">
-    
       <!-- Modal content-->
-      <div class="modal-content" style="text-align: center; width: 100%">
-        <div class="modal-header">
+      <div class="modal-content">
+		<div class="modal-body" align="center">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <!-- <h4 class="modal-title">Modal Header</h4> -->
-        </div>
-        <div class="modal-body">
           <a href="#" data-toggle="modal" data-target="#3"><img class="img-responsive" style="width:100% height: 100%;" src="img/diasactividades.png" alt=""></a>
         </div>
-        <div class="modal-footer">
-          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-        </div>
-      </div>
-      
+      </div>  
     </div>
   </div>
 
   <div class="modal fade" id="4" role="dialog" data-keyboard="false" data-backdrop="static">
     <div class="modal-dialog">
-    
       <!-- Modal content-->
-      <div class="modal-content" style="text-align: center; width: 100%">
-        <div class="modal-header">
+      <div class="modal-content">
+       <div class="modal-body" align="center">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <!-- <h4 class="modal-title">Modal Header</h4> -->
-        </div>
-        <div class="modal-body">
           <a href="#" data-toggle="modal" data-target="#4"><img class="img-responsive" style="width:100% height: 100%;" src="img/diascurso.png" alt=""></a>
         </div>
-        <div class="modal-footer">
-          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-        </div>
       </div>
-      
     </div>
   </div>
 
 <!-- AQUI PARA BOTON FACEBOOK -->
-  <div class="modal fade" id="5" role="dialog" data-keyboard="true" style="text-align: center; height: 100%; width: 100%;">
+<!--   <div class="modal fade" id="5" role="dialog" data-keyboard="true" style="text-align: center; height: 100%; width: 100%;">
     <div class="modal-dialog">
     	<a class="btn btn-light btn-sm pull-left" data-dismiss="modal"><i class="fa fa-times" style="color:red;"></i><br></a>
-    	<!-- <button type="button" class="close" data-dismiss="modal" style="color:red;">&times;</button> -->
             <div class="fb-page" data-href="https://www.facebook.com/ADMisionera/" data-width="300" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
           	<blockquote cite="https://www.facebook.com/ADMisionera/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ADMisionera/">Iglesia Asamblea de Dios Misionera</a></blockquote>
         	</div>
-        	<!-- data-height="400" data-width="300" -->
-    
-      <!-- Modal content-->
-           
     </div>
-  </div>
+  </div> -->
 
   <!-- AQUI PARA BOTON DONACION -->
   <div class="modal fade" id="6" role="dialog" data-keyboard="false" data-backdrop="static">
-    <div class="modal-dialog" style="text-align: center;">
-    <a href="#" data-toggle="modal" data-target="#6"><img class="img-responsive" style="text-align:center; width:100% height: 100%;" src="img/bigbv.png" alt=""></a>
-          <a href="#" data-toggle="modal" data-target="#6"><img class="img-responsive" style="text-align:center; width:100% height: 100%;" src="img/biggt.png" alt=""></a>
+    <div class="modal-dialog">
       <!-- Modal content-->
-      
-      
+      <div class="modal-content">
+        <div class="modal-body" align="center">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <a href="#" data-toggle="modal" data-target="#6"><img class="img-responsive" style="width:100% height: 100%;" src="img/donacion.png" alt=""></a>
+        </div>
+      </div>     
     </div>
   </div>
